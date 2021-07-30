@@ -1,0 +1,621 @@
+:root{
+    --color-primary: #0496ff;
+    --color-secondary: #084eaa;
+    --color-complementary: #eee8aa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-secondary);
+    margin: 0 auto;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/***************************************************************************
+*   HEADER
+***************************************************************************/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+header .logo{
+    margin: 0 auto;
+}
+
+header .logo img{
+    width: 200px;
+    height: 120px;
+}
+
+header .menu{
+    margin-right: 30px;
+}
+
+header .menu nav ul{
+    display: flex;
+}
+
+header .menu nav ul li{
+    list-style: none;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    header{
+        
+    }
+    header .menu{
+        display: none;
+    }
+}
+
+/***************************************************************************
+*   CAPA
+***************************************************************************/
+.sec-capa{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.capa{
+    color: white;
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.capa .resumo{
+    width: 48%;
+}
+
+.capa .resumo h3{
+    font-size: 22px;
+    font-weight: 100;
+}
+
+.capa .resumo h1{
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.capa .foto{
+    align-items: center;
+}
+
+.capa .foto img{
+    width: 70%;
+    border-radius: 300px;
+    border: 3px solid white;
+    box-shadow: 0 0 20px white;
+}
+
+@media (max-width: 900px) {
+    .container{
+        width: 98%;
+    }
+    .sec-capa{
+        flex-direction: column-reverse;
+    }
+    .capa .resumo{
+        width: 100%;
+    }
+    .capa .resumo h3{
+        font-size: 16px;
+    }
+    .capa .resumo h1{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .capa .foto img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/***************************************************************************
+*   ARTIGOS
+***************************************************************************/
+
+.artigos{
+    background-color: white;
+    padding: 30px;
+}
+
+.artigos h1{
+    font-size: 50px;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.artigos h2{
+    font-size: 32px;
+    color: var(--color-secondary);
+    text-align: center;
+}
+
+.artigos p{
+    font-size: 20px;
+    color: var(--color-secondary);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.artigos .boxes{
+    display: flex;
+    justify-content: center;
+}
+
+.artigos .boxes .box{
+    width: 20%;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.artigos .boxes .box:first-of-type{
+    margin-left: 0;
+}
+
+.artigos .boxes .box img{
+    width: 100%;
+    height: 200px;
+}
+
+.artigos .boxes .box a{
+    color: var(--color-primary);
+}
+
+.artigos .boxes .box a:first-of-type{
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+}
+
+.artigos .boxes .box a{
+    color: var(--color-secondary);
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .artigos h1:first-of-type{
+        font-size: 40px;
+    }
+
+    .artigos h2:first-of-type{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .artigos p{
+        display: none;
+    }
+
+    .artigos .boxes{
+        flex-direction: column;
+    }
+
+    .artigos .boxes .box{
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+/***************************************************************************
+*   PALESTRAS E ENTREVISTAS
+***************************************************************************/
+.palestras-entrevistas{
+    background-color: var(--color-complementary);
+    padding: 30px;
+}
+
+.palestras-entrevistas h1{
+    font-size: 50px;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.palestras-entrevistas h2{
+    font-size: 32px;
+    color: var(--color-secondary);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.palestras-entrevistas .boxes{
+    display: flex;
+    justify-content: center;
+}
+
+.palestras-entrevistas .boxes .box{
+    width: 25%;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.palestras-entrevistas .boxes .box:first-of-type{
+    margin-left: 0;
+}
+
+.palestras-entrevistas .boxes .box img{
+    width: 100%;
+    height: 200px;
+}
+
+.palestras-entrevistas .boxes .box a{
+    color: var(--color-primary);
+}
+
+.palestras-entrevistas .boxes .box a:first-of-type{
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+}
+
+.palestras-entrevistas .boxes .box a{
+    color: var(--color-secondary);
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .palestras-entrevistas h1:first-of-type{
+        font-size: 40px;
+    }
+
+    .palestras-entrevistas h2:first-of-type{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .palestras-entrevistas .boxes{
+        flex-direction: column;
+    }
+
+    .palestras-entrevistas .boxes .box{
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+/***************************************************************************
+*   CONSULTORIA GRATUITA
+***************************************************************************/
+.consultoria-gratuita{
+    background-color: var(--color-secondary);
+    padding: 30px;
+}
+
+.consultoria-gratuita h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+.consultoria-gratuita h2{
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.consultoria-gratuita p{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+.consultoria-gratuita p:last-of-type{
+    margin-bottom: 50px;
+}
+
+.consultoria-gratuita .form input{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.consultoria-gratuita .form .field{
+    display: block;
+    width: 40%;
+    margin: 7px auto;
+    padding: 16px;
+    font-size: 20px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+}
+
+.consultoria-gratuita .form .label{
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.consultoria-gratuita .form .label .check{
+    margin-right: 5px;
+    zoom: 2;
+}
+
+.consultoria-gratuita .form .button input{
+    background-color: red;
+    border: none;
+    outline: none;
+    color: white;
+    width: 40%;
+    margin: 20px auto;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+@media (max-width: 900px) {
+    .consultoria-gratuita h1:first-of-type{
+        font-size: 40px;
+    }
+
+    .consultoria-gratuita h2:first-of-type{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .consultoria-gratuita .boxes{
+        flex-direction: column;
+    }
+
+    .consultoria-gratuita .boxes .box{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .consultoria-gratuita .form .field{
+        width: 100%;
+    }
+    
+    .consultoria-gratuita .form .button input{
+        width: 100%;
+        font-size: 12px;
+    }
+
+}
+
+/***************************************************************************
+*   SERVIÇOS
+***************************************************************************/
+.servicos{
+    background-color: white;
+    padding: 30px;
+}
+
+.servicos h1{
+    font-size: 50px;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.servicos .boxes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.servicos .boxes .box{
+    width: 25%;
+    text-align: center;
+    border: 3px solid var(--color-secondary);
+    box-shadow: 0 0 10px var(--color-secondary);
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding: 10px 30px;
+}
+
+.servicos .boxes .box i{
+    font-size: 4em;  
+    margin: 20px auto;
+    color: var(--color-secondary);
+}
+
+.servicos .boxes .box h2{
+    font-size: 2em;
+    color: var(--color-secondary);
+    margin-bottom: 10px;
+}
+
+.servicos .boxes .box p{
+    font-size: 1.5em;
+    text-align: justify;
+    color: var(--color-secondary);
+}
+
+@media (max-width: 900px) {
+    .servicos h1:first-of-type{
+        font-size: 40px;
+    }
+
+    .servicos h2:first-of-type{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .servicos .boxes{
+        flex-direction: column;
+    }
+
+    .servicos .boxes .box{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .servicos .boxes .box p{
+        font-size: 1em;
+    }
+}
+
+
+/***************************************************************************
+*   CONTATO
+***************************************************************************/
+.contato{
+    background-color: var(--color-complementary);
+    padding: 30px;
+}
+
+.contato h1{
+    font-size: 50px;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.contato h2{
+    font-size: 32px;
+    color: var(--color-secondary);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contato .box-contatos{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.contato .box-contatos .email{
+    width: 50%;
+}
+
+.contato .box-contatos .networks{
+    width: 50%;
+}
+
+.contato .box-contatos label{
+    display: block;
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--color-secondary);   
+    margin-bottom: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contato .box-contatos input, 
+.contato .box-contatos textarea{
+    padding: 10px 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 90%;
+    border-radius: 3px;
+    border-color: var(--color-secondary);
+    outline: none;
+}
+
+.contato .box-contatos .email textarea{
+    height: 100px;
+}
+
+.contato .box-contatos button{
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contato .box-contatos .networks .icons{
+    display: flex;
+    justify-content: center;
+}
+
+.contato .box-contatos .networks .icons a i{
+    color: var(--color-secondary);
+    font-size: 80px;
+    margin-right: 40px;
+}
+
+.contato .box-contatos .networks .icons a i:hover{
+    color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+    .contato .box-contatos h1:first-of-type{
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+
+    .contato .box-contatos h2:first-of-type{
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .contato .box-contatos{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .contato .box-contatos .email,
+    .contato .box-contatos .networks{
+        width: 100%;
+    }
+
+    .contato .box-contatos h2{
+        margin-top: 20px;
+    }
+
+    .contato .box-contatos .boxes .box p{
+        font-size: 1em;
+    }
+
+    .contato .box-contatos .networks .icons a i{
+        font-size: 60px;
+        margin-right: 10px;
+    }
+}
+
+/***************************************************************************
+*   FOOTER
+***************************************************************************/
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--color-primary);
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
