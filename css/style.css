@@ -266,6 +266,12 @@ a{
     margin-left: 20px;
 }
 
+.palestras-entrevistas .boxes .bigbox{
+    width: 45%;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
 .palestras-entrevistas .boxes .box:first-of-type{
     margin-left: 0;
 }
@@ -279,6 +285,10 @@ a{
     color: var(--color-primary);
 }
 
+.palestras-entrevistas .boxes .bigbox a{
+    color: var(--color-primary);
+}
+
 .palestras-entrevistas .boxes .box a:first-of-type{
     color: var(--color-primary);
     font-size: 20px;
@@ -286,7 +296,21 @@ a{
     display: block;
 }
 
+.palestras-entrevistas .boxes .bigbox a:first-of-type{
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+}
+
 .palestras-entrevistas .boxes .box a{
+    color: var(--color-secondary);
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+}
+
+.palestras-entrevistas .boxes .bigbox a{
     color: var(--color-secondary);
     font-size: 20px;
     font-weight: 500;
